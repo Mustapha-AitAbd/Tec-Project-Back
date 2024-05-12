@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <style>
+    @font-face {
+        font-family: 'Nunito';
+        src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;700;800;900&display=swap') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    </style>
+</head>
+<body style="margin:0px;font-family: 'Nunito', sans-serif;">
+    <table style="margin: 0 auto;background-color: #fdfdfd;">
+        <tr>
+            <td>
+                <table style="width: 100%;background-color: #e6e6e6;">
+                    <tr>
+                        <td style="text-align: center;padding: 20px;">
+                            <img style="width: 225px;height: 66px;pointer-events: none;" src="http://gounane.ovh:3000/pogo.png" alt="" srcset="">
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%;padding: 20px;">
+                    <tr>
+                        <td style="text-align: justify;">
+                            <p style="margin-bottom: 20px;">Hello ${#username#}, you've recently request for a password change. This is a temporary test email. Anyways, here is your code:</p>
+                            <table style="margin: 0 auto;">
+                                <tr>
+                                    <td style="background-color: #03d3b9;border-radius: 5px;padding: 10px;">
+                                        <h1 style="text-decoration: none;font-family: 'Montserrat', sans-serif;color: white;font-size: 16px;display: block;text-align: center;" id="button">${#pin#}</h1>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p style="margin-top: 20px;margin-bottom: 20px;">This code is only valid for the next 6 hours. If you haven't requested for a password change, please ignore this email.</p>
+                            <p style="margin-top: 20px;margin-bottom: 20px;">Any response to this email will not be seen by anyone as it is a no-reply email</p>
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%;background-color: #0d1721;color: white;">
+                    <tr>
+                        <td style="text-align: center;padding: 20px;">This is a footer, hi!</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+    </html>

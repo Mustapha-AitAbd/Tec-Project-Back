@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <style>
+    @font-face {
+        font-family: 'Nunito';
+        src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;700;800;900&display=swap') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    </style>
+</head>
+<body style="margin:0px;font-family: 'Nunito', sans-serif;">
+    <table style="margin: 0 auto;background-color: #fdfdfd;">
+        <tr>
+            <td>
+                <table style="width: 100%;background-color: #e6e6e6;">
+                    <tr>
+                        <td style="text-align: center; padding: 20px;">
+                            <img style="width: 225px;height: 66px;pointer-events: none;" src="http://gounane.ovh:3000/pogo.png" alt="" srcset="">
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%;padding: 20px;">
+                    <tr>
+                        <td style="text-align: justify;">
+                            <p style="margin-bottom: 20px;">Thank you ${#username#} for choosing Pogo, this is a temporary test email. Anyways, activate your account below</p>
+                            <table style="margin: 0 auto;">
+                                <tr>
+                                    <td style="background-color: #03d3b9;border-radius: 5px;padding: 10px;">
+                                        <a style="text-decoration: none;font-family: 'Montserrat', sans-serif;color: white;font-size: 16px;display: block;text-align: center;" id="button" href="http://gounane.ovh:3000/client/activate?id=${#id#}">Activate your account</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p style="margin-top: 20px;margin-bottom: 20px;">If the button doesn't work, copy and paste the link below:</p>
+                            <p style="margin-top: 0;margin-bottom: 0;"><a style="text-decoration: none;font-family: 'Montserrat', sans-serif;color: #03d3b9;display: block;text-align: center;" href="http://gounane.ovh:3000/client/activate?id=${#id#}">http://gounane.ovh:3000/client/activate?id=${#id#}</a></p>
+                            <p style="margin-top: 20px;margin-bottom: 20px;">This email will not be seen by anybody as it is a no-reply email</p>
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%;background-color: #0d1721;color: white;">
+                    <tr>
+                        <td style="text-align: center;padding: 20px;">This is a footer</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+    </html>

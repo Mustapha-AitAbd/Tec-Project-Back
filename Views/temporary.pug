@@ -1,0 +1,23 @@
+meta(charset='UTF-8')
+meta(http-equiv='X-UA-Compatible' content='IE=edge')
+meta(name='viewport' content='width=device-width,initial-scale=1')
+title Document
+script(src='http://checkout.stripe.com/checkout.js' defer)
+script.
+  
+  var SPK = "pk_test_q8AZLbnNgzLWmyYkZgrOGOEy"
+  
+script(src='./js/PayementsTest.js' defer)
+| 
+
+
+|Bonjour,
+
+br
+form(action="/createUser", method="post") 
+  input(name="email") 
+  input(name="number")
+  input(name="exp_month")
+  input(name="exp_year")
+  input(name="cvc")
+  button(type="submit") Payer
